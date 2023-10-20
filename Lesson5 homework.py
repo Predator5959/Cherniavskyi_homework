@@ -53,3 +53,10 @@ last = stringa.rfind('h')
 print(last)
 new_string = stringa[:first+1] + stringa[first+1:last].replace('h', 'H') + stringa[last:]
 print(new_string)
+
+my_string = '0123456789'
+
+for symbol1 in my_string:
+    for symbol2 in my_string:
+        num = int(symbol1 + symbol2)
+        print(num)
