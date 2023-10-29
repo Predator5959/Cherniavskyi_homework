@@ -130,7 +130,7 @@ new_list = []
 set1 = set(my_str1)
 set2 = set(my_str2)
 
-same_let = list(set1 and set2)
+same_let = list(set1.intersection(set2))
 
 for let in same_let:
     if my_str1.count(let) == 1 and my_str2.count(let) == 1:
