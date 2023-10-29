@@ -110,12 +110,13 @@ print(new_list)
 # 10. Дано два рядки. Створити список, у якому помістити ті символи,
 # які є в обох рядках хоча б один раз.
 
-my_str_1 = ' bla not for'
-my_str_2 = 'gft rew cgk'
+my_str_1 = 'a1'
+my_str_2 = 'gft1'
 
-set_1 = set(my_str_1)
-set_2 = set(my_str_2)
-new_list = list(set_1 and set_2)
+set1 = set(my_str_1)
+set2 = set(my_str_2)
+
+new_list = list(set1.intersection(set2))
 print(new_list)
 
 # 11. Дано два рядки. Створити список, у якому помістити ті символи, які є в обох рядках,
