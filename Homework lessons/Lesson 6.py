@@ -42,12 +42,12 @@ print(len(unique_ch))
 print(sorted(unique_ch))
 
 ###################
-my_str1 = "bla BLA car"
-empty_list1 = []
+my_str = "bla BLA car"
+empty_list = []
 
-for pair in range(0, len(my_str1), 2):
-    empty_list1.append(my_str1[pair])
-print(empty_list1)
+for pair in range(0, len(my_str), 2):
+    empty_list.append(my_str[pair])
+print(empty_list)
 
 ######################
 my_str = "bla BLA car"
