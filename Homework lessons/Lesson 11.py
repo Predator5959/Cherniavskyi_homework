@@ -10,7 +10,6 @@ def dict_of_dir_and_files(directory):
 
     if os.path.isdir(directory):
       items = os.listdir(directory)
-
       for item in items:
         full_path = os.path.join(directory, item)
       if os.path.isfile(full_path):
@@ -20,5 +19,5 @@ def dict_of_dir_and_files(directory):
 
     return result_dict
 
-result = dict_of_dir_and_files(test_dir)
+result = dict_of_dir_and_files(test_directory)
 print(result)
