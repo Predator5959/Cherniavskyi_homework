@@ -25,9 +25,9 @@ print(result)
 # Функція повертає той самий словник, але з відсортованими іменами файлів та папок у відповідних списках.
 # Булеве значення True означає, що порядок сортування алфавітний, False – зворотний порядок.
 
-def sorted_dir_and_files_dir(dictionary,):
-    dictionary['filenames'] = sorted(dictionary['filenames'], reverse = False)
-    dictionary['dirnames'] = sorted(dictionary['dirnames'], reverse = False)
+def sorted_dir_and_files_dir(dictionary, reverse = False):
+    dictionary['filenames'] = sorted(dictionary['filenames'], reverse = reverse)
+    dictionary['dirnames'] = sorted(dictionary['dirnames'], reverse = reverse)
     return dictionary
 
 sorted_result = sorted_dir_and_files_dir(result)
